@@ -1,0 +1,345 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* bar de navigation */
+
+.navbar { 
+    position: fixed;
+    font-family: 'Poiret One', sans-serif;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: #ffefd5 ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+} 
+
+.navbar ul {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    text-decoration: none; 
+    height: 100%;
+}
+
+
+li {
+    display: inline-block;
+    margin: 0 4rem; 
+    padding: 0;
+    font-size: 1.5625rem;
+    
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none; 
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+#openBtn {
+    display: none;
+}
+
+.menuToggle.active .navbar {
+    display: flex;
+    flex-direction: column;  
+    left: 0;
+    top: 0;
+  }
+  
+  .menuToggle.active #Home {
+    margin-top: 0;
+  }
+  
+  .menuToggle.active .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  .menuToggle.active .navbar li:not(:last-child) {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .menuToggle.active ~ #openBtn {
+    display: none;
+  }
+ 
+  #close {
+    display: none;
+ }
+
+.menuToggle.active #close {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0.75rem;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    margin: 1rem;
+
+  }
+
+  #openBtn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .menuBurger {
+    width: 40px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  }
+  
+
+/* Présentation */
+
+.présentation {
+    font-family: 'Poiret One';
+    color: #ffefd5;
+    background-image:url("../images/IMG-1119.JPG");
+    background-size: 100%;
+    height: 40rem;  
+    position: relative;
+} 
+
+.présentation h1 {
+    font-size: 4rem;
+    display: flex;
+    justify-content: end;
+    padding-right: 25%;
+    padding-top: 10%;
+    margin-bottom: 1rem;
+}
+
+.présentation h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: end;
+    padding-right: 23rem;
+}
+
+.présentation h3 {
+    font-size: 1.5625rem ;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center; 
+    position: relative;
+    margin: 0 2rem 0 2rem;
+    top: 40%;
+    
+}
+
+/* bio courte*/
+
+.bio-courte {
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+.bio-courte p {
+    width: 65%;
+    color: #ffefd5;
+    font-size: 1.25rem;
+    text-align: center; 
+    font-weight: normal;
+    line-height: 4.375rem;
+    margin: 2.5rem 0 0 0;
+    padding: 1.4rem;  
+}
+
+/* responsive design */
+
+@media only screen and (max-width:1300px){
+    li {
+        margin: 0 2rem;  
+    }
+
+    .présentation {
+        height: 30rem;
+    }
+
+    .présentation h1 {
+        font-size: 3rem;
+        padding-right: 15rem;
+        padding-top: 3rem;
+    }
+
+    .présentation h2 {
+        font-size: 2.5rem;
+        padding-right: 20rem;
+    }
+
+    .présentation h3 {
+        top: 55%;
+    }
+
+}
+
+
+@media only screen and (max-width:1224px){
+    .bio-courte p {
+        line-height: 3rem;
+        height: 40rem;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    #photo-bio{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:975px) {
+        .navbar {
+          display: none; /* on cache la navbar horizontale */
+        }
+      
+        .menuToggle.active .navbar {
+          display: flex; /* version verticale quand active */
+        }
+      
+        #openBtn {
+          display: block; /* bouton burger visible */
+        }
+
+        .présentation{
+          height: 30rem; 
+          top: 1rem;
+        }
+
+}
+
+@media only screen and (max-width:920px){
+    .titre{
+        display: flex;
+        justify-content: center;
+    }
+
+    .présentation{
+        height: 18rem;
+        width: 60%; 
+        margin-top: 7rem;      
+    }
+ 
+    .présentation h1, .présentation h2 {
+        position: relative;
+        top: -12rem;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .présentation h1{
+        font-size: 2.5rem;
+    }
+
+    .présentation h2{
+        font-size: 2rem;
+    }
+
+    .présentation h3{
+        font-size: 1rem;
+        position: relative;
+        top: 30%;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .bio-courte p{
+        width: 80%;
+        
+    }
+
+}
+
+@media only screen and (max-width:860px){
+    .présentation{
+        height: 18rem;
+    }
+
+    .présentation h3{
+        top: 25%; 
+    }
+}
+
+@media only screen and (max-width:770px){
+    .menuToggle.active .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    .présentation{
+        height: 14rem;
+    }
+
+    .présentation h3{
+        top: -1rem; 
+    }
+}
+
+@media only screen and (max-width:680px){
+    .présentation{
+        height: 12rem;
+    }
+
+    .présentation h3{
+        top: -5%; 
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .présentation{
+        height: 8rem;
+    }
+
+    .présentation h3{
+        display: none;
+    }
+
+    .bio-courte p{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:375px){
+    body{
+        margin: 0;
+    }
+
+    .présentation h1{
+        font-size: 2rem;
+    }
+
+    .présentation h2{
+        font-size: 1.5rem;
+    }
+
+    .présentation h1, .présentation h2 {
+        position: relative;
+        top: -9.5rem;   
+    }
+}

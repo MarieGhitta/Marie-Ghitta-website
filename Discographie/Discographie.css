@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+    color:#ffefd5;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+/*main*/
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.disque {
+    width: 22%;
+    margin: 8rem 4rem 0 4rem;
+    text-align: center;     
+}
+
+.titre {
+  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+  font-family: 'Poiret One', sans-serif;
+}
+
+.album {
+  opacity: 0.8;
+}
+
+.label {
+  opacity: 0.6;
+}
+
+.image {
+    width: 100%;
+}
+
+.image a:hover{
+  cursor: pointer;
+}
+
+/* responsive design */
+
+@media only screen and (max-width:975px) {
+    main h2{
+      font-size: 1rem;
+    }
+
+    .disque {
+      width: 25%;
+      margin: 4rem 4rem 0 4rem;    
+  }
+}
+
+@media only screen and (max-width:430px){
+  #MDBA, #PLDQ{
+  padding-top: 3rem;
+  }
+
+  .disque {
+    width: 26%;
+    margin: 2rem 2rem 0 2rem;    
+  }
+
+  main h2 {
+  font-size: 0.70rem;
+  }
+}

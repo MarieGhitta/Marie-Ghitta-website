@@ -1,0 +1,137 @@
+body {
+    background-color: #000000;
+    color:#ffefd5;
+    margin: 0;
+}
+
+/*main*/
+main {
+    margin-top: 4rem;
+  
+}
+
+.event{
+    display:flex;
+    justify-content: start;
+    border-bottom: 1px solid #ffefd5;
+    padding-bottom: 1rem;
+}
+
+h1{
+  margin-left: 2rem;
+  font-family: 'Poiret One', sans-serif;
+}
+
+
+h2{
+    font-weight: normal;
+    margin-bottom: 0;
+    display: flex;
+    align-items: end;
+    
+}
+
+.groupe{
+    width: 30rem;
+    margin-right: 6rem;
+}
+
+.groupe, .lieu {
+  font-size: 1.25rem;
+}
+
+.lieu, .lieu-resp {
+  opacity: 0.7;
+}
+
+.date{
+    font-family: 'Poiret One', sans-serif;
+    width: 6rem;
+    margin-left: 6rem;
+    margin-right: 4rem;
+    font-size: 2rem;
+}
+
+.mois {
+    margin-top: 6rem;
+}
+
+.responsive {
+  display:none;
+  font-family: 'Poiret One', sans-serif;
+}
+
+/* responsive design */
+
+@media only screen and (max-width:1370px){
+  .groupe, .lieu{
+      font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1250px){
+  h2 {
+    font-size: 0.75rem;
+  }
+
+  .groupe{
+    margin-right: 0;
+  }
+}
+
+
+@media only screen and (max-width:1175px) {
+  h2 {
+    font-size: 0.5rem;
+  }
+  
+    .groupe{
+      width: 25rem;
+    }
+}
+
+@media only screen and (max-width:1025px){
+  .date {
+    margin-right: 0;
+    width: 10rem;
+    margin-left: 2rem;
+  }
+  
+}
+
+@media only screen and (max-width:950px){
+  h1:first-child {
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+
+  .mois{
+    margin-top: 4rem;
+  }
+  
+  .groupe, .lieu{
+    display: none;
+  }
+
+
+  .responsive{
+    display: block;
+    line-height: 1.5;
+    text-align: start;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width:375px){
+  .date{
+    font-size: 1.5rem;
+    width: 8rem;
+    margin-left: 1rem;
+  }
+
+  .responsive{
+    font-size: 1rem;
+  }
+}

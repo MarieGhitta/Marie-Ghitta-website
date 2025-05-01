@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    color:#ffefd5;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*main*/
+.projet a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffefd5;
+}
+
+.projet {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.image {
+    width: 30%;
+}
+
+h2 {
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+h3 {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 2rem;
+}
+
+
+p, .projet a {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* responsive design */
+
+@media only screen and (max-width:975px) {
+    .jazz h2 {
+      margin-top: 2rem;
+      padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:770px){
+  .projet{
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width:430px){
+
+  h2{
+    font-size: 2.5rem;
+  }
+
+  .jazz h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .World-Music h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -26,7 +26,7 @@ html, body {
 }
 
 .image {
-    width: 30%;
+    width: 40%;
 }
 
 h2 {
@@ -57,13 +57,28 @@ p, .projet a {
       margin-top: 2rem;
       padding-top: 1rem;
     }
+
+    .image{
+      width: 50%;
+    }
 }
 
 @media only screen and (max-width:770px){
   .projet{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
+
+  .image{
+    width: 75%;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+  }
+  
 }
+
+
 
 @media only screen and (max-width:430px){
 
@@ -73,11 +88,12 @@ p, .projet a {
 
   .jazz h2 {
     margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    padding-bottom: 0;
   }
 
   .World-Music h2{
     margin-top: 2rem;
-    margin-bottom: 2rem;
   }
+
+
 }

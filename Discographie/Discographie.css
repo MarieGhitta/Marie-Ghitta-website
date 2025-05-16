@@ -59,13 +59,13 @@ main {
 }
 
 @media only screen and (max-width:430px){
-  #MDBA, #PLDQ{
+  #MDBA {
   padding-top: 3rem;
   }
 
   .disque {
-    width: 26%;
-    margin: 2rem 2rem 0 2rem;    
+    width: 60%;
+    margin: 2rem;    
   }
 
   main h2 {

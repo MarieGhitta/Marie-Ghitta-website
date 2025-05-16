@@ -1,0 +1,53 @@
+body {
+    background-color: #000000;
+    color:#ffefd5;
+    margin: 0;
+    font-family: 'Poiret one', sans-serif;
+}
+
+/*main*/
+.photoID{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.image{
+    width: 30%;
+}
+
+.coordonnées{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    line-height: 2.5rem;
+}
+
+.lien{
+    color: #ffefd5;
+}
+
+.lien:hover{
+    cursor: pointer;
+}
+
+#gsm {
+    color:#ffefd5;
+}
+
+/* responsive design */
+@media only screen and (max-width:800px){
+    .image{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width:430px) {
+  .photoID{
+    margin-top: 6rem;
+}
+
+.image{
+    width: 70%;
+}
+}

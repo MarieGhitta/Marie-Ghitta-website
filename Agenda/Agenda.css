@@ -5,6 +5,11 @@ body {
 }
 
 /*main*/
+a {
+  text-decoration: none;
+  color:#ffefd5;
+}
+
 main {
     margin-top: 4rem;
   

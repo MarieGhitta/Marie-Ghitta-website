@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color:#ffefd5;
+    color:#BFBFBF;
     margin: 0;
 }
 
@@ -15,7 +15,7 @@ html, body {
 .projet a {
     text-decoration: underline;
     font-weight: bold;
-    color: #ffefd5;
+    color: #BFBFBF;
 }
 
 .projet {

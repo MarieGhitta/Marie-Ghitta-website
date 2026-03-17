@@ -1,6 +1,6 @@
 body {
     background-color: #000000;
-    color:#ffefd5;
+    color:#BFBFBF;
     margin: 0;
     font-family: 'Poiret one', sans-serif;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .lien{
-    color: #ffefd5;
+    color: #BFBFBF;
 }
 
 .lien:hover{
@@ -31,7 +31,7 @@ body {
 }
 
 #gsm {
-    color:#ffefd5;
+    color:#BFBFBF;
 }
 
 /* responsive design */

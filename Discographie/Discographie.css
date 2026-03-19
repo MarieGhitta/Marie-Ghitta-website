@@ -21,6 +21,10 @@ main {
   width: 25%;
 }
 
+#take {
+  width: 24.5%;
+}
+
 .disque {
     width: 22%;
     margin: 8rem 4rem 0 4rem;

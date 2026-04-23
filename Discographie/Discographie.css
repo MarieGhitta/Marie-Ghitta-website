@@ -77,6 +77,10 @@ main {
     padding-top: 3rem;
   }
 
+  #take {
+    width: 60%;
+  }
+
   .disque {
     width: 60%;
     margin: 2rem;    

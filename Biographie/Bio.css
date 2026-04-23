@@ -33,10 +33,9 @@ main {
     justify-content: center;
 }
 
-
 #photo {
     padding-bottom: 3rem;
-    width: 15%;
+    width: 30%;
 }
 
 h3 {
@@ -75,7 +74,7 @@ h3 {
     padding: 1rem;
 }
 .BM{
-    width: 30%;
+    width: 60%;
 
 }
 
@@ -87,6 +86,10 @@ h3 {
     }
     #un{
       font-size: 1.5rem;
+    }
+
+    .image {
+        width: 100%;
     }
   }
 

@@ -120,7 +120,7 @@ li {
     font-family: 'Poiret One';
     margin-top: 3rem;
     color: blanchedalmond;
-    background-image:url("../images/IMG-1119.JPG");
+    background-image:url("../images/Home\ couleur.png");
     background-size: 100%;
     height: 40rem;  
     position: relative;
@@ -157,25 +157,134 @@ li {
     
 }
 
-/* bio courte*/
+/* vidéos + biographie */
 
-.bio-courte {
-    width: 100%;
-    height:auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    padding-bottom: 2.5rem;
+.videos-bio {
+    width: 90%;
+    max-width: 1000px;
+    margin: 8rem auto 10rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem 5rem;
+
+    align-items: center;
 }
-.bio-courte p {
-    width: 65%;
+
+
+/* fenêtres vidéo */
+
+.video-card {
+    width: 380px;
+    aspect-ratio: 16 / 9;
+
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 235, 205, 0.5);
+    box-shadow: 0 0 0 4px rgba(60, 4, 12, 0.2);
+
+    box-sizing: border-box;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+
+/* textes */
+
+.bio-text {
+    width: 380px;
     color: blanchedalmond;
-    font-size: 1.25rem;
-    text-align: center; 
-    font-weight: normal;
-    line-height: 4.375rem;
-    margin: 2.5rem 0 0 0;
-    padding: 1.4rem;  
+}
+
+.bio-text p {
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* placement des éléments */
+
+/* ligne 1 : vidéo gauche / texte droite */
+
+.video-1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.bio-1 {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}
+
+
+/* ligne 2 : texte gauche / vidéo droite */
+
+.bio-2 {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+}
+
+.video-2 {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+}
+
+
+/* ligne 3 : vidéo gauche / texte droite */
+
+.video-3 {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+}
+
+.bio-3 {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+}
+
+
+/* ligne 4 : texte gauche / vidéo droite */
+
+.bio-4 {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: start;
+}
+
+.video-4 {
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: end;
+}
+
+
+/* effet au survol */
+
+.video-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 0 4px rgba(60, 4, 12, 0.25),
+        0 8px 25px rgba(60, 4, 12, 0.5);
 }
 
 /* responsive design */
@@ -207,12 +316,12 @@ li {
 }
 
 
-@media only screen and (max-width:1224px){
+/*@media only screen and (max-width:1224px){
     .bio-courte p {
         line-height: 3rem;
         height: 40rem;
     }
-}
+}*/
 
 @media only screen and (max-width:1150px){
     #photo-bio{

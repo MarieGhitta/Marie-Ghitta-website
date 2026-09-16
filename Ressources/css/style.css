@@ -9,6 +9,10 @@ body {
 .navbar { 
     position: fixed;
     font-family: 'Poiret One', sans-serif;
+    font-weight: 400;
+    text-shadow:
+    0.3px 0 0 currentColor,
+    -0.3px 0 0 currentColor;
     width: 100%;
     top: 0;
     z-index: 2;
@@ -139,6 +143,9 @@ li {
 
 .présentation h3 {
     font-size: 1.5625rem ;
+    text-shadow:
+    0.3px 0 0 currentColor,
+    -0.3px 0 0 currentColor;
     font-style: italic;
     font-weight: normal;
     text-align: center; 

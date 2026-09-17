@@ -161,22 +161,20 @@ li {
 /* vidéos + biographie */
 
 .videos-bio {
-    width: 90%;
-    max-width: 1000px;
+    width: 94%;
+    max-width: 1120px;
     margin: 8rem auto 10rem;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem 5rem;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 7rem 4rem;
 
     align-items: center;
 }
 
-
-/* fenêtres vidéo */
-
 .video-card {
-    width: 380px;
+    width: 100%;
+    max-width: 500px;
     aspect-ratio: 16 / 9;
 
     position: relative;

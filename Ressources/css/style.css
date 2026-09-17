@@ -1,6 +1,7 @@
 body {
     background-color: #000000;
     margin: 0;
+    color: blanchedalmond;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -16,7 +17,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 2;
-    background-color: none;
+    background-color: black;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 } 
@@ -45,7 +46,7 @@ li {
 
 .navbar a:hover {
     cursor: pointer;
-    color: #3c040c;
+    color: white;
 }
 
 #openBtn {
@@ -106,7 +107,7 @@ li {
   
   .menuBurger {
     font-size: 5rem;
-    color:  #3c040c;
+    color:  blanchedalmond;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

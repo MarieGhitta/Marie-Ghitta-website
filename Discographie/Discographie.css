@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    color:#BFBFBF;
     margin: 0;
 }
 
@@ -72,9 +71,12 @@ main {
 
 @media only screen and (max-width:430px){
 
+  #veda {
+    padding-top: 3rem;
+  }
+
   #oubli {
     width: 63%;
-    padding-top: 3rem;
   }
 
   #take {

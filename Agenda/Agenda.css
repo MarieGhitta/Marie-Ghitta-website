@@ -1,13 +1,12 @@
 body {
     background-color: #000000;
-    color:#BFBFBF;
     margin: 0;
 }
 
 /*main*/
 a {
   text-decoration: none;
-  color:#BFBFBF;
+  color: blanchedalmond;
 }
 
 main {

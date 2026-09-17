@@ -155,45 +155,146 @@ main {
     display: inline-block;
 }
 
-/* responsive design */
-@media only screen and (max-width:975px) {
-   #un {
-      margin-top: 2rem;
-      padding-top: 1rem;
-    }
-    #un{
-      font-size: 1.5rem;
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media only screen and (max-width: 975px) {
+
+    #un {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        font-size: 1.5rem;
     }
 
     .image {
         width: 100%;
     }
-  }
+
+    #photo {
+        width: 80%;
+    }
+
+    .bio-image img {
+        width: 80%;
+    }
+
+    .image-ybs img {
+        width: 75%;
+    }
+
+    .image-moon img {
+        width: 80%;
+    }
+
+    .BM {
+        width: 80%;
+    }
+}
 
 
-@media only screen and (max-width:430px){
-  #deux, #trois {
-   margin-right: 1rem;
-   margin-left: 1rem;
-  }
+@media only screen and (max-width: 600px) {
+
+    .bio-intro {
+        padding: 3rem 1rem 3rem;
+    }
+
+    #un {
+        font-size: 1.35rem;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+    }
+
+    #photo {
+        width: 92%;
+    }
+
+    .bio-section {
+        padding: 1rem 1rem;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    #deux,
+    #trois,
+    .creation p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+    }
+
+    .bio-image {
+        margin: 3rem 0 1.5rem;
+    }
+
+    .bio-image img {
+        width: 92%;
+    }
+
+    .image-ybs img {
+        width: 88%;
+    }
+
+    .image-moon img {
+        width: 92%;
+    }
+
+    .imageBM {
+        margin: 3rem 0 3rem;
+    }
+
+    .BM {
+        width: 92%;
+    }
+}
 
 
-  #un {
-    margin-bottom: 2rem;
-    padding-top: 1.5rem;
-  }
+@media only screen and (max-width: 430px) {
 
-  #photo {
-    padding-bottom: 0;
-  }
+    #un {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+    }
 
-  #deux {
-    margin-top: 2rem;
-    margin-bottom: 1.75rem;
-  }
+    #photo {
+        width: 95%;
+    }
 
-  .imageBM{
-    padding: 0;
-  }
+    #deux,
+    #trois,
+    .creation p {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 
+    #deux {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .bio-image img {
+        width: 95%;
+    }
+
+    .image-ybs img {
+        width: 92%;
+    }
+
+    .image-moon img {
+        width: 95%;
+    }
+
+    .BM {
+        width: 95%;
+    }
+
+    .imageBM {
+        padding: 0;
+    }
 }

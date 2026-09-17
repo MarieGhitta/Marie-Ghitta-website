@@ -287,11 +287,19 @@ li {
         0 8px 25px rgba(60, 4, 12, 0.5);
 }
 
-/* responsive design */
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
 
-@media only screen and (max-width:1350px){
+
+/* ---------------------------------------------------------
+   1350px — navigation + présentation
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 1350px) {
+
     li {
-        margin: 0 2rem;  
+        margin: 0 2rem;
     }
 
     .présentation {
@@ -312,152 +320,431 @@ li {
     .présentation h3 {
         top: 50%;
     }
-
 }
 
 
-/*@media only screen and (max-width:1224px){
-    .bio-courte p {
-        line-height: 3rem;
-        height: 40rem;
-    }
-}*/
+/* ---------------------------------------------------------
+   1150px
+   --------------------------------------------------------- */
 
-@media only screen and (max-width:1150px){
-    #photo-bio{
+@media only screen and (max-width: 1150px) {
+
+    #photo-bio {
         width: 40%;
     }
 }
 
-@media only screen and (max-width:975px) {
-        .navbar {
-          display: none; /* on cache la navbar horizontale */
-        }
-      
-        .menuToggle.active .navbar {
-          display: flex; /* version verticale quand active */
-        }
-      
-        #openBtn {
-          display: block; /* bouton burger visible */
-        }
 
-        .présentation{
-          height: 30rem; 
-          top: 1rem;
-        }
+/* ---------------------------------------------------------
+   975px — NAVBAR
+   On garde ton fonctionnement actuel
+   --------------------------------------------------------- */
 
-}
+@media only screen and (max-width: 975px) {
 
-@media only screen and (max-width:920px){
-    .titre{
-        display: flex;
-        justify-content: center;
-    }
-
-    .présentation{
-        height: 18rem;
-        width: 60%; 
-        margin-top: 7rem;      
-    }
- 
-    .présentation h1, .présentation h2 {
-        position: relative;
-        top: -12rem;
-        padding-right: 0;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .présentation h1{
-        font-size: 2.5rem;
-    }
-
-    .présentation h2{
-        font-size: 2rem;
-    }
-
-    .présentation h3{
-        font-size: 1rem;
-        position: relative;
-        top: 20%;
-        margin: 0 1rem 0 1rem;
-    }
-
-    .bio-courte p{
-        width: 80%;
-        
-    }
-
-}
-
-@media only screen and (max-width:860px){
-    .présentation{
-        height: 18rem;
-    }
-
-    .présentation h3{
-        top: 20%; 
-    }
-}
-
-@media only screen and (max-width:770px){
-    .menuToggle.active .navbar {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-
-    .présentation{
-        height: 14rem;
-    }
-
-    .présentation h3{
-        top: -1rem; 
-    }
-}
-
-@media only screen and (max-width:680px){
-    .présentation{
-        height: 12rem;
-    }
-
-    .présentation h3{
-        top: -5%; 
-        font-size: 0.75rem;
-    }
-}
-
-@media only screen and (max-width:430px) {
-    .présentation{
-        height: 8rem;
-    }
-
-    .présentation h3{
+    .navbar {
         display: none;
     }
 
-    .bio-courte p{
-        margin-top: 1rem;
+    .menuToggle.active .navbar {
+        display: flex;
+    }
+
+    #openBtn {
+        display: block;
     }
 }
 
-@media only screen and (max-width:375px){
-    body{
-        margin: 0;
+
+/* ---------------------------------------------------------
+   920px — présentation tablette
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 920px) {
+
+    .titre {
+        display: flex;
+        justify-content: center;
     }
 
-    .présentation h1{
+    .présentation {
+
+        width: 75%;
+        height: auto;
+        aspect-ratio: 16 / 7;
+
+        margin-top: 7rem;
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .présentation h1,
+    .présentation h2 {
+
+        position: relative;
+
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+
+        left: 16%;
+        top: 1.5rem;
+    }
+
+    .présentation h1 {
+        font-size: 2.5rem;
+        margin-top: 6%;
+    }
+
+    .présentation h2 {
         font-size: 2rem;
     }
 
-    .présentation h2{
+    .présentation h3 {
+
+        position: static;
+
+        font-size: 1rem;
+        line-height: 1.5;
+
+        margin: auto 2rem 8%;
+
+        max-width: 700px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   860px
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 860px) {
+
+    .présentation {
+        width: 80%;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   768px — vidéos + textes en une colonne
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 925px) {
+
+
+    /* =====================================================
+       PRÉSENTATION
+       ===================================================== */
+
+    .présentation {
+
+        width: 85%;
+        aspect-ratio: 4 / 3;
+
+        margin-top: 6rem;
+    }
+
+    .présentation h1 {
+        font-size: 2.2rem;
+    }
+
+    .présentation h2 {
+        font-size: 1.8rem;
+    }
+
+    .présentation h3 {
+        font-size: 0.95rem;
+    }
+
+
+    /* =====================================================
+       VIDÉOS + TEXTES
+       ===================================================== */
+
+    .videos-bio {
+
+        width: 85%;
+        max-width: 600px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .video-card,
+    .bio-text {
+
+        width: 100%;
+        max-width: 500px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* -----------------------------------------------------
+       Ordre mobile
+       ----------------------------------------------------- */
+
+    .video-1 { order: 1; }
+    .bio-1   { order: 2; }
+
+    .video-2 { order: 3; }
+    .bio-2   { order: 4; }
+
+    .video-3 { order: 5; }
+    .bio-3   { order: 6; }
+
+    .video-4 { order: 7; }
+    .bio-4   { order: 8; }
+
+
+    /* Annule la grille desktop */
+
+    .video-1,
+    .video-2,
+    .video-3,
+    .video-4,
+    .bio-1,
+    .bio-2,
+    .bio-3,
+    .bio-4 {
+
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+
+    /* Espacement */
+
+    .video-card {
+        margin-bottom: 2rem;
+    }
+
+    .bio-text {
+        margin-bottom: 5rem;
+    }
+
+    .bio-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   680px
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 680px) {
+
+    .présentation {
+
+        width: 90%;
+        aspect-ratio: 4 / 3;
+
+        margin-top: 5rem;
+    }
+
+    .présentation h1 {
+        font-size: 2rem;
+    }
+
+    .présentation h2 {
+        font-size: 1.6rem;
+    }
+
+    .présentation h3 {
+
+        font-size: 0.85rem;
+        line-height: 1.5;
+
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   500px
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 500px) {
+
+    .présentation {
+
+        width: 92%;
+        aspect-ratio: 3 / 2;
+
+        margin-top: 5rem;
+    }
+
+    .présentation h1 {
+        font-size: 1.8rem;
+    }
+
+    .présentation h2 {
+        font-size: 1.4rem;
+    }
+
+    .présentation h3 {
+
+        font-size: 0.75rem;
+        line-height: 1.45;
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Marie Ghitta + Altiste :
+       un peu plus à droite et plus haut */
+
+    .présentation h1,
+    .présentation h2 {
+        left: 20%;
+        top: -1rem;
+    }
+
+
+    /* Vidéos + textes */
+
+    .videos-bio {
+
+        width: 88%;
+
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .video-card,
+    .bio-text {
+        max-width: 100%;
+    }
+
+    .video-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .bio-text {
+        margin-bottom: 4rem;
+    }
+
+    .bio-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   430px
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 430px) {
+
+    .présentation {
+
+        width: 94%;
+        aspect-ratio: 3 / 2;
+
+        margin-top: 4.5rem;
+    }
+
+    .présentation h1 {
+        font-size: 1.6rem;
+    }
+
+    .présentation h2 {
+        font-size: 1.25rem;
+    }
+
+    .présentation h3 {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   375px
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 375px) {
+
+    .présentation h1 {
         font-size: 1.5rem;
     }
 
-    .présentation h1, .présentation h2 {
-        position: relative;
-        top: -9.5rem;   
+    .présentation h2 {
+        font-size: 1.15rem;
+    }
+
+    .présentation h3 {
+        font-size: 0.65rem;
+    }
+
+    .videos-bio {
+        width: 90%;
+    }
+
+    .bio-text p {
+        font-size: 0.9rem;
+        line-height: 1.55;
     }
 }
+
+
+/* ---------------------------------------------------------
+   320px
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 320px) {
+
+    .présentation {
+
+        width: 95%;
+        aspect-ratio: 3 / 2;
+
+        margin-top: 4rem;
+    }
+
+    .présentation h1 {
+        font-size: 1.35rem;
+    }
+
+    .présentation h2 {
+        font-size: 1rem;
+    }
+
+    .présentation h3 {
+
+        font-size: 0.6rem;
+        line-height: 1.35;
+
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    .videos-bio {
+        width: 92%;
+    }
+
+    .bio-text p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+

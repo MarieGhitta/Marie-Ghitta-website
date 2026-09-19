@@ -436,3 +436,34 @@ h1 {
 #photos {
     scroll-margin-top: 40px;
 }
+
+@media (max-width: 400px) {
+
+    .musicians {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .musician-photo {
+        width: min(100%, 240px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .musician h2 {
+        font-size: 16px;
+    }
+
+    .musician-header h1.long-name {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 280px) {
+
+    .musician-header h1.long-name {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+}

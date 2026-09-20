@@ -467,3 +467,136 @@ h1 {
         line-height: 1.3;
     }
 }
+
+/* =========================
+   PROGRAMME
+   ========================= */
+
+.programme {
+    width: min(100%, 720px);
+    margin-top: 75px;
+
+    font-family: "Libre Baskerville", Baskerville, Georgia, serif;
+    text-align: center;
+    color: #30352a;
+
+    text-shadow: 0 0 12px rgba(248, 245, 237, 0.8);
+}
+
+.programme h2 {
+    margin: 0 0 30px;
+
+    font-family: "Libre Baskerville", Baskerville, Georgia, serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.programme .composer {
+    margin: 0 0 2rem;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.programme-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.programme-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.programme-item .work {
+    font-weight: 700;
+}
+
+.programme-item .reference {
+    font-size: 13px;
+    font-style: italic;
+    color: #66685c;
+}
+
+.programme-item .duration {
+    margin-top: 3px;
+
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    color: #66685c;
+}
+
+/* Les Quatre Saisons */
+
+.programme-item.programme-main {
+    margin-top: 15px;
+    padding-top: 28px;
+
+    border-top: 1px solid rgba(48, 53, 42, 0.25);
+}
+
+.programme-item.programme-main .work {
+    font-size: 19px;
+}
+
+.programme-item.programme-main .duration {
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .programme {
+        width: min(100%, 600px);
+        margin-top: 55px;
+    }
+
+    .programme h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .programme .composer {
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .programme-list {
+        gap: 24px;
+    }
+
+    .programme-item {
+        font-size: 14px;
+    }
+
+    .programme-item.programme-main {
+        margin-top: 10px;
+        padding-top: 24px;
+    }
+
+    .programme-item.programme-main .work {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================
+   ANCRES
+   ========================= */
+
+#programme,
+#biographies,
+#photos {
+    scroll-margin-top: 40px;
+}

@@ -79,20 +79,49 @@ p, .projet a {
 
 
 
-@media only screen and (max-width:430px){
+@media only screen and (max-width: 430px) {
 
-  h2{
-    font-size: 2.5rem;
-  }
+    h2 {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-  .jazz h2 {
-    margin-top: 2.5rem;
-    padding-bottom: 0;
-  }
+    h3 {
+        font-size: 1.7rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
-  .World-Music h2{
-    margin-top: 2rem;
-  }
+    p,
+    .projet a {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
 
+    .image {
+        width: 85%;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
 
+    .projet {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+
+    .jazz h2 {
+        margin-top: 2.5rem;
+        padding-bottom: 0;
+    }
+
+    .World-Music h2 {
+        margin-top: 2rem;
+    }
 }

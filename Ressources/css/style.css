@@ -68,7 +68,7 @@ body {
 .navbar ul {
     margin: 0;
     text-align: center;
-    padding: 0;
+    padding: 0 9rem 0 0;
     text-decoration: none;
     height: 100%;
 }
@@ -353,8 +353,13 @@ li {
 @media only screen and (max-width: 1350px) {
 
     li {
-        margin: 0 2rem;
+        margin: 0 1.5rem;
     }
+
+    .navbar ul {
+        padding-right: 8rem;
+    }
+
 
     .présentation {
         height: 30rem;

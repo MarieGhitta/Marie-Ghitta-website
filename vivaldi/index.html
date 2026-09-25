@@ -29,14 +29,24 @@
 
     <main class="vivaldi-page">
 
-        <h1>Titre Vivaldi</h1>
+        <!-- LANGUES -->
+        <div class="language-switcher" aria-label="Language selection">
+            <button type="button" data-lang="fr" class="active">FR</button>
+            <button type="button" data-lang="nl">NL</button>
+            <button type="button" data-lang="en">EN</button>
+        </div>
 
+        <!-- TITRE -->
+        <h1>Vivaldi: a new season</h1>
+
+        <!-- IMAGE -->
         <div id="image_intro">
             <img src="../Ressources/images/vivaldi/vivaldi1.jpeg" alt="Antonio Vivaldi">
         </div>
 
+        <!-- PRESENTATION -->
         <div class="presentation">
-            <p>
+            <p data-i18n="intro">
                 Six artistes vous proposent de (re-)découvrir Vivaldi, arrangé pour deux violons,
                 un alto, un violoncelle, une contrebasse et… une guitare ! Un défi de taille,
                 avec des musiciens de talent qui vous offriront des interprétations aussi épurées
@@ -44,36 +54,47 @@
             </p>
         </div>
 
+        <!-- PROGRAMME -->
         <section class="programme" id="programme">
 
-            <h2>Programme</h2>
+            <h2 data-i18n="programme">Programme</h2>
 
             <p class="composer">Antonio Vivaldi</p>
 
             <div class="programme-list">
 
                 <div class="programme-item">
-                    <span class="work">Concerto pour cordes en ré majeur</span>
+                    <span class="work" data-i18n="work1">
+                        Concerto pour cordes en ré majeur
+                    </span>
                     <span class="reference">RV 121</span>
                 </div>
 
                 <div class="programme-item">
-                    <span class="work">Concerto en fa mineur</span>
+                    <span class="work" data-i18n="work2">
+                        Concerto pour cordes en fa mineur
+                    </span>
                     <span class="reference">RV 143</span>
                 </div>
 
                 <div class="programme-item">
-                    <span class="work">Concerto en sol mineur pour cordes</span>
+                    <span class="work" data-i18n="work3">
+                        Concerto pour cordes en sol mineur
+                    </span>
                     <span class="reference">RV 156</span>
                 </div>
 
                 <div class="programme-item">
-                    <span class="work">Concerto pour luth en ré majeur</span>
+                    <span class="work" data-i18n="work4">
+                        Concerto pour luth en ré majeur
+                    </span>
                     <span class="reference">RV 93</span>
                 </div>
 
                 <div class="programme-item">
-                    <span class="work">Les Quatre Saisons</span>
+                    <span class="work" data-i18n="work5">
+                        Les Quatre Saisons
+                    </span>
                     <span class="reference">RV 269, 315, 293, 297</span>
                 </div>
 
@@ -81,73 +102,110 @@
 
         </section>
 
+        <!-- MUSICIENS -->
         <section class="musicians" id="biographies">
 
             <article class="musician">
                 <div class="musician-photo">
-                    <a href="https://www.camillebabutdumares.com/" target="_blank"><img
-                            src="../Ressources/images/vivaldi/camille.jpg" alt="Camille Babut du Marès"></a>
+                    <a href="https://www.camillebabutdumares.com/" target="_blank">
+                        <img src="../Ressources/images/vivaldi/camille.jpg"
+                            alt="Camille Babut du Marès">
+                    </a>
                 </div>
                 <h2>Camille Babut du Marès</h2>
-                <p>violon</p>
+                <p data-i18n="violin">violon</p>
             </article>
 
             <article class="musician">
                 <div class="musician-photo">
-                    <a href="maarten.html"><img src="../Ressources/images/vivaldi/maarten.jpg"
-                            alt="Maarten Vandenbemden"></a>
+                    <a href="maarten.html">
+                        <img src="../Ressources/images/vivaldi/maarten.jpg"
+                            alt="Maarten Vandenbemden">
+                    </a>
                 </div>
                 <h2>Maarten Vandenbemden</h2>
-                <p>guitare</p>
+                <p data-i18n="guitar">guitare</p>
             </article>
-
 
             <article class="musician">
                 <div class="musician-photo">
-                    <a href="mario.html"><img src="../Ressources/images/vivaldi/mario.jpeg" alt="Mario Guierre"></a>
+                    <a href="mario.html">
+                        <img src="../Ressources/images/vivaldi/mario.jpeg"
+                            alt="Mario Guierre">
+                    </a>
                 </div>
                 <h2>Mario Guierre</h2>
-                <p>violon</p>
+                <p data-i18n="violin">violon</p>
             </article>
 
             <article class="musician">
                 <div class="musician-photo">
-                    <a href="../index.html" target="blank"><img src="../Ressources/images/vivaldi/marie.jpg"
-                            alt="Marie Ghitta"></a>
+                    <a href="../index.html" target="blank">
+                        <img src="../Ressources/images/vivaldi/marie.jpg"
+                            alt="Marie Ghitta">
+                    </a>
                 </div>
                 <h2>Marie Ghitta</h2>
-                <p>alto</p>
+                <p data-i18n="viola">alto</p>
             </article>
 
             <article class="musician">
                 <div class="musician-photo">
-                    <a href="corentin.html"><img src="../Ressources/images/vivaldi/corentin.jpg"
-                            alt="Corentin Dalgarno"></a>
+                    <a href="corentin.html">
+                        <img src="../Ressources/images/vivaldi/corentin.jpg"
+                            alt="Corentin Dalgarno">
+                    </a>
                 </div>
                 <h2>Corentin Dalgarno</h2>
-                <p>violoncelle</p>
+                <p data-i18n="cello">violoncelle</p>
             </article>
 
             <article class="musician">
                 <div class="musician-photo">
-                    <a href="leo.html"><img src="../Ressources/images/vivaldi/leo2.jpeg" alt="Léo Coq"></a>
+                    <a href="leo.html">
+                        <img src="../Ressources/images/vivaldi/leo2.jpeg"
+                            alt="Léo Coq">
+                    </a>
                 </div>
                 <h2>Léo Coq</h2>
-                <p>contrebasse</p>
+                <p data-i18n="doubleBass">contrebasse</p>
             </article>
 
         </section>
 
+        <!-- PHOTOS -->
         <section class="photo-gallery" id="photos">
-            <figure class="photo-item"> <img src="../Ressources/images/vivaldi/vivaldi1.jpeg" alt="Les Quatre Saisons">
-                <a href="../Ressources/images/vivaldi/photo1.jpg" download>Télécharger</a>
+
+            <figure class="photo-item">
+                <img src="../Ressources/images/vivaldi/vivaldi1.jpeg"
+                    alt="Les Quatre Saisons">
+                <a href="../Ressources/images/vivaldi/photo1.jpg"
+                    download
+                    data-i18n="download">
+                    Télécharger
+                </a>
             </figure>
-            <figure class="photo-item"> <img src="../Ressources/images/vivaldi/vivaldi2.jpeg" alt="Les Quatre Saisons">
-                <a href="../Ressources/images/vivaldi/photo2.jpg" download>Télécharger</a>
+
+            <figure class="photo-item">
+                <img src="../Ressources/images/vivaldi/vivaldi2.jpeg"
+                    alt="Les Quatre Saisons">
+                <a href="../Ressources/images/vivaldi/photo2.jpg"
+                    download
+                    data-i18n="download">
+                    Télécharger
+                </a>
             </figure>
-            <figure class="photo-item"> <img src="../Ressources/images/vivaldi/vivaldi3.jpeg" alt="Les Quatre Saisons">
-                <a href="../Ressources/images/vivaldi/photo3.jpg" download>Télécharger</a>
+
+            <figure class="photo-item">
+                <img src="../Ressources/images/vivaldi/vivaldi3.jpeg"
+                    alt="Les Quatre Saisons">
+                <a href="../Ressources/images/vivaldi/photo3.jpg"
+                    download
+                    data-i18n="download">
+                    Télécharger
+                </a>
             </figure>
+
         </section>
 
     </main>

@@ -511,6 +511,214 @@ function setProjetsLanguage(lang) {
 }
 
 // =====================================================
+// LANGUES — PAGE DISCOGRAPHIE
+// =====================================================
+
+const discographieTranslations = {
+
+    fr: {
+        vedaAlbum: "RISE AND SHINE, 2026",
+        oubliAlbum: "L'oubli, 2025",
+        mariaAlbum: "of Ástor Piazzolla's \"María de Buenos Aires\"",
+        suitesAlbum: "Suites de Danses, 2020",
+        arcoAlbum: "ARCO",
+        sourisAlbum: "Dix souris dans le maquis, 2021",
+        danteAlbum: "DAS 700 - Dante Alighieri Jazz Suite, 2022",
+        detailsAlbum: "Details",
+        moonAlbum: "Memory Log, 2023",
+        takenouchiAlbum: "2019"
+    },
+
+    nl: {
+        vedaAlbum: "RISE AND SHINE, 2026",
+        oubliAlbum: "L'oubli, 2025",
+        mariaAlbum: "uit Astor Piazzolla's \"María de Buenos Aires\"",
+        suitesAlbum: "Danssuites, 2020",
+        arcoAlbum: "ARCO",
+        sourisAlbum: "Tien muizen in de maquis, 2021",
+        danteAlbum: "DAS 700 - Dante Alighieri Jazz Suite, 2022",
+        detailsAlbum: "Details",
+        moonAlbum: "Memory Log, 2023",
+        takenouchiAlbum: "2019"
+    },
+
+    en: {
+        vedaAlbum: "RISE AND SHINE, 2026",
+        oubliAlbum: "L'oubli, 2025",
+        mariaAlbum: "from Ástor Piazzolla's \"María de Buenos Aires\"",
+        suitesAlbum: "Dance Suites, 2020",
+        arcoAlbum: "ARCO",
+        sourisAlbum: "Ten Mice in the Maquis, 2021",
+        danteAlbum: "DAS 700 - Dante Alighieri Jazz Suite, 2022",
+        detailsAlbum: "Details",
+        moonAlbum: "Memory Log, 2023",
+        takenouchiAlbum: "2019"
+    }
+
+};
+
+
+function setDiscographieLanguage(lang) {
+
+    const translations = discographieTranslations[lang];
+
+    if (!translations) return;
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+
+        const key = element.dataset.i18n;
+
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+
+    });
+
+    document.querySelectorAll(".language-switcher button").forEach((button) => {
+
+        button.classList.toggle(
+            "active",
+            button.dataset.lang === lang
+        );
+
+    });
+
+    localStorage.setItem("discographie-language", lang);
+
+    setNavigationLanguage(lang);
+}
+
+// =====================================================
+// LANGUES — PAGE CONTACT
+// =====================================================
+
+const contactTranslations = {
+
+    fr: {
+        facebook: "Facebook"
+    },
+
+    nl: {
+        facebook: "Facebook"
+    },
+
+    en: {
+        facebook: "Facebook"
+    }
+
+};
+
+
+function setContactLanguage(lang) {
+
+    const translations = contactTranslations[lang];
+
+    if (!translations) return;
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+
+        const key = element.dataset.i18n;
+
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+
+    });
+
+    document.querySelectorAll(".language-switcher button").forEach((button) => {
+
+        button.classList.toggle(
+            "active",
+            button.dataset.lang === lang
+        );
+
+    });
+
+    localStorage.setItem("contact-language", lang);
+
+    setNavigationLanguage(lang);
+}
+
+// ==================== AGENDA ====================
+
+const agendaMonthTranslations = {
+    fr: {
+        janvier: "Janvier",
+        février: "Février",
+        mars: "Mars",
+        avril: "Avril",
+        mai: "Mai",
+        juin: "Juin",
+        juillet: "Juillet",
+        août: "Août",
+        septembre: "Septembre",
+        octobre: "Octobre",
+        novembre: "Novembre",
+        décembre: "Décembre"
+    },
+
+    nl: {
+        janvier: "Januari",
+        février: "Februari",
+        mars: "Maart",
+        avril: "April",
+        mai: "Mei",
+        juin: "Juni",
+        juillet: "Juli",
+        août: "Augustus",
+        septembre: "September",
+        octobre: "Oktober",
+        novembre: "November",
+        décembre: "December"
+    },
+
+    en: {
+        janvier: "January",
+        février: "February",
+        mars: "March",
+        avril: "April",
+        mai: "May",
+        juin: "June",
+        juillet: "July",
+        août: "August",
+        septembre: "September",
+        octobre: "October",
+        novembre: "November",
+        décembre: "December"
+    }
+};
+
+function setAgendaLanguage(lang) {
+    const translations = agendaMonthTranslations[lang];
+    if (!translations) return;
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".mois h1").forEach((element) => {
+
+        if (!element.dataset.originalDate) {
+            element.dataset.originalDate = element.textContent.trim();
+        }
+
+        const originalDate = element.dataset.originalDate;
+        const match = originalDate.match(/^([A-Za-zÀ-ÿ]+)(\s+\d{4})$/);
+
+        if (!match) return;
+
+        const month = match[1].toLowerCase();
+        const year = match[2];
+
+        if (translations[month]) {
+            element.textContent = translations[month] + year;
+        }
+    });
+}
+
+// =====================================================
 // INITIALISATION
 // =====================================================
 
@@ -620,6 +828,86 @@ if (isProjetsPage && languageButtons.length > 0) {
     setProjetsLanguage(
         savedProjetsLanguage && projetsTranslations[savedProjetsLanguage]
             ? savedProjetsLanguage
+            : "fr"
+    );
+}
+
+// PAGE DISCOGRAPHIE
+
+const isDiscographiePage =
+    document.querySelector(".disque");
+
+if (isDiscographiePage && languageButtons.length > 0) {
+
+    languageButtons.forEach((button) => {
+
+        button.addEventListener("click", () => {
+            setNavigationLanguage(button.dataset.lang);
+        });
+
+    });
+
+    const savedDiscographieLanguage =
+        localStorage.getItem("discographie-language");
+
+    setNavigationLanguage(
+        savedDiscographieLanguage &&
+            navigationTranslations[savedDiscographieLanguage]
+            ? savedDiscographieLanguage
+            : "fr"
+    );
+
+    localStorage.setItem(
+        "discographie-language",
+        savedDiscographieLanguage &&
+            navigationTranslations[savedDiscographieLanguage]
+            ? savedDiscographieLanguage
+            : "fr"
+    );
+}
+
+if (document.querySelector(".mois")) {
+    const savedLanguage = localStorage.getItem("agenda-language") || "fr";
+    setAgendaLanguage(savedLanguage);
+
+    document.querySelectorAll(".language-switcher button").forEach((button) => {
+        button.addEventListener("click", () => {
+            const lang = button.dataset.lang;
+
+            setAgendaLanguage(lang);
+            setNavigationLanguage(lang);
+
+            localStorage.setItem("agenda-language", lang);
+
+            document.querySelectorAll(".language-switcher button").forEach((btn) => {
+                btn.classList.toggle("active", btn === button);
+            });
+        });
+    });
+}
+
+// ==================== PAGE CONTACT ====================
+
+const isContactPage =
+    document.querySelector(".coordonnées");
+
+if (isContactPage && languageButtons.length > 0) {
+
+    languageButtons.forEach((button) => {
+
+        button.addEventListener("click", () => {
+            setContactLanguage(button.dataset.lang);
+        });
+
+    });
+
+    const savedContactLanguage =
+        localStorage.getItem("contact-language");
+
+    setContactLanguage(
+        savedContactLanguage &&
+            contactTranslations[savedContactLanguage]
+            ? savedContactLanguage
             : "fr"
     );
 }

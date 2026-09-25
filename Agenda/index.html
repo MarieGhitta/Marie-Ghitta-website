@@ -22,17 +22,34 @@
 
 <body>
     <header>
+        <div class="language-switcher" aria-label="Language selection">
+    <button type="button" data-lang="fr" class="active">FR</button>
+    <button type="button" data-lang="nl">NL</button>
+    <button type="button" data-lang="en">EN</button>
+</div>
         <div class="menuToggle">
             <nav class="navbar">
                 <a id="close" href="#">✕</a>
-                <ul id="Menu">
-                    <li id="Home"><a href="../">Home</a></li>
-                    <li><a href="../biographie">Biographie</a></li>
-                    <li><a href="../projets">Projets</a></li>
-                    <li><a href="../discographie">Discographie</a></li>
-                    <li><a href="./">Agenda</a></li>
-                    <li><a href="../contact-me">Contact</a></li>
-                </ul>
+<ul id="Menu">
+    <li id="Home">
+        <a href="../" data-i18n="navHome">Accueil</a>
+    </li>
+    <li>
+        <a href="../biographie" data-i18n="navBio">Biographie</a>
+    </li>
+    <li>
+        <a href="../projets" data-i18n="navProjects">Projets</a>
+    </li>
+    <li>
+        <a href="../discographie" data-i18n="navDiscography">Discographie</a>
+    </li>
+    <li>
+        <a href="./" data-i18n="navAgenda">Agenda</a>
+    </li>
+    <li>
+        <a href="../contact-me" data-i18n="navContact">Contact</a>
+    </li>
+</ul>
             </nav>
         </div>
 

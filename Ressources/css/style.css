@@ -98,7 +98,7 @@ li {
 }
 
 #openBtn {
-    position: absolute;
+    position: fixed;
     top: -2.2rem;
     left: 1rem;
     z-index: 3;

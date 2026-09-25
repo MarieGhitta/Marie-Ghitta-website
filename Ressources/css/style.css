@@ -4,16 +4,15 @@
 
 .language-switcher {
     position: fixed;
-    top: 1rem;
-    right: 1.5rem;
+    top: 0.5rem;
+    right: 1rem;
     z-index: 10;
 
     display: flex;
     gap: 12px;
-
-    background-color: black;
     padding: 0.5rem 1.5rem;
 }
+
 
 .language-switcher button {
     border: none;
@@ -118,7 +117,7 @@ li {
 
 .menuToggle.active .navbar {
     display: flex;
-    background-color: #3c040c;
+    background-color: black;
     flex-direction: column;
     left: 0;
     top: 0;
@@ -407,6 +406,10 @@ li {
 
     #openBtn {
         display: block;
+    }
+
+    .language-switcher {
+        top: 0;
     }
 }
 

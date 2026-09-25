@@ -1,3 +1,44 @@
+/* =========================
+   SÉLECTEUR DE LANGUE
+   ========================= */
+
+.language-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 10;
+
+    display: flex;
+    gap: 12px;
+}
+
+.language-switcher button {
+    border: none;
+    background: none;
+    padding: 0;
+
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: blanchedalmond;
+    cursor: pointer;
+
+    text-shadow:
+        0.3px 0 0 currentColor,
+        -0.3px 0 0 currentColor;
+}
+
+.language-switcher button:hover,
+.language-switcher button.active {
+    color: white;
+}
+
+.language-switcher button.active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 body {
     background-color: #000000;
     margin: 0;
@@ -7,41 +48,41 @@ body {
 
 /* bar de navigation */
 
-.navbar { 
+.navbar {
     position: fixed;
     font-family: 'Poiret One', sans-serif;
     font-weight: 400;
     text-shadow:
-    0.3px 0 0 currentColor,
-    -0.3px 0 0 currentColor;
+        0.3px 0 0 currentColor,
+        -0.3px 0 0 currentColor;
     width: 100%;
     top: 0;
     z-index: 2;
     background-color: black;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-} 
+}
 
 .navbar ul {
     margin: 0;
     text-align: center;
     padding: 0;
-    text-decoration: none; 
+    text-decoration: none;
     height: 100%;
 }
 
 
 li {
     display: inline-block;
-    margin: 0 4rem; 
+    margin: 0 4rem;
     padding: 0;
     font-size: 1.5625rem;
-    
+
 }
 
 .navbar a {
     color: blanchedalmond;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .navbar a:hover {
@@ -55,35 +96,35 @@ li {
 
 .menuToggle.active .navbar {
     display: flex;
-    background-color:#3c040c;
-    flex-direction: column;  
+    background-color: #3c040c;
+    flex-direction: column;
     left: 0;
     top: 0;
-  }
-  
-  .menuToggle.active #Home {
+}
+
+.menuToggle.active #Home {
     margin-top: 0;
-  }
-  
-  .menuToggle.active .navbar ul {
+}
+
+.menuToggle.active .navbar ul {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
-  }
-  
-  .menuToggle.active .navbar li:not(:last-child) {
+}
+
+.menuToggle.active .navbar li:not(:last-child) {
     display: block;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-  }
+}
 
-  .menuToggle.active ~ #openBtn {
+.menuToggle.active~#openBtn {
     display: none;
-  }
- 
-  #close {
+}
+
+#close {
     display: none;
- }
+}
 
 .menuToggle.active #close {
     display: block;
@@ -95,25 +136,25 @@ li {
     position: absolute;
     margin: 1rem;
 
-  }
+}
 
-  #openBtn {
+#openBtn {
     position: absolute;
     top: -1.5rem;
     left: 1rem;
     z-index: 3;
     cursor: pointer;
-  }
-  
-  .menuBurger {
+}
+
+.menuBurger {
     font-size: 5rem;
-    color:  blanchedalmond;
+    color: blanchedalmond;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-  }
-  
+}
+
 
 /* Présentation */
 
@@ -121,11 +162,11 @@ li {
     font-family: 'Poiret One';
     margin-top: 3rem;
     color: blanchedalmond;
-    background-image:url("../images/Home\ couleur.png");
+    background-image: url("../images/Home\ couleur.png");
     background-size: 100%;
-    height: 40rem;  
+    height: 40rem;
     position: relative;
-} 
+}
 
 .présentation h1 {
     font-size: 4rem;
@@ -145,17 +186,17 @@ li {
 }
 
 .présentation h3 {
-    font-size: 1.5625rem ;
+    font-size: 1.5625rem;
     text-shadow:
-    0.3px 0 0 currentColor,
-    -0.3px 0 0 currentColor;
+        0.3px 0 0 currentColor,
+        -0.3px 0 0 currentColor;
     font-style: italic;
     font-weight: normal;
-    text-align: center; 
+    text-align: center;
     position: relative;
     margin: 0 2rem 0 2rem;
     top: 40%;
-    
+
 }
 
 /* vidéos + biographie */
@@ -498,17 +539,37 @@ li {
        Ordre mobile
        ----------------------------------------------------- */
 
-    .video-1 { order: 1; }
-    .bio-1   { order: 2; }
+    .video-1 {
+        order: 1;
+    }
 
-    .video-2 { order: 3; }
-    .bio-2   { order: 4; }
+    .bio-1 {
+        order: 2;
+    }
 
-    .video-3 { order: 5; }
-    .bio-3   { order: 6; }
+    .video-2 {
+        order: 3;
+    }
 
-    .video-4 { order: 7; }
-    .bio-4   { order: 8; }
+    .bio-2 {
+        order: 4;
+    }
+
+    .video-3 {
+        order: 5;
+    }
+
+    .bio-3 {
+        order: 6;
+    }
+
+    .video-4 {
+        order: 7;
+    }
+
+    .bio-4 {
+        order: 8;
+    }
 
 
     /* Annule la grille desktop */
@@ -746,4 +807,3 @@ li {
         line-height: 1.5;
     }
 }
-

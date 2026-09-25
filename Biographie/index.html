@@ -23,16 +23,38 @@
 
 <body>
     <header>
+        <div class="language-switcher">
+            <button type="button" data-lang="fr" class="active">FR</button>
+            <button type="button" data-lang="nl">NL</button>
+            <button type="button" data-lang="en">EN</button>
+        </div>
         <div class="menuToggle">
             <nav class="navbar">
                 <a id="close" href="#">✕</a>
                 <ul id="Menu">
-                    <li id="Home"><a href="../">Home</a></li>
-                    <li><a href="./">Biographie</a></li>
-                    <li><a href="../projets">Projets</a></li>
-                    <li><a href="../discographie">Discographie</a></li>
-                    <li><a href="../agenda">Agenda</a></li>
-                    <li><a href="../contact-me">Contact</a></li>
+                    <li id="Home">
+                        <a href="../index.html" data-i18n="navHome">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a href="./" data-i18n="navBio">Biographie</a>
+                    </li>
+
+                    <li>
+                        <a href="../projets" data-i18n="navProjects">Projets</a>
+                    </li>
+
+                    <li>
+                        <a href="../discographie" data-i18n="navDiscography">Discographie</a>
+                    </li>
+
+                    <li>
+                        <a href="../agenda" data-i18n="navAgenda">Agenda</a>
+                    </li>
+
+                    <li>
+                        <a href="../contact-me" data-i18n="navContact">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -48,7 +70,7 @@
         <div class="texte">
             <section class="bio-intro">
 
-                <h3 id="un">
+                <h3 id="un" data-i18n="intro">
                     A l’âge de trois ans et demi, Marie commence la musique. <br>
                     Son attirance pour les fréquences graves la pousse à choisir l’alto comme instrument définitif.
                 </h3>
@@ -63,10 +85,10 @@
             <section class="bio-section">
 
                 <div class="section-title">
-                    <h2>Formation</h2>
+                    <h2 data-i18n="formation">Formation</h2>
                 </div>
 
-                <p id="deux">
+                <p id="deux" data-i18n="formationText">
                     Voulant faire de sa passion son métier, Marie entre au Conservatoire Royal de Bruxelles où elle
                     obtient sa licence avec distinction dans la classe de Thérèse-Marie Gilissen. Elle poursuit ses
                     études au Koninklijk Conservatorium van Brussel dans la classe de Paul de Clerck où elle obtient son
@@ -87,10 +109,10 @@
             <section class="bio-section">
 
                 <div class="section-title">
-                    <h2>Ouverture</h2>
+                    <h2 data-i18n="openness">Ouverture</h2>
                 </div>
 
-                <p id="deux">
+                <p id="deux" data-i18n="opennessText">
                     Elle élargit ses horizons en suivant le cours d'improvisation libre de Kris Defoort grâce auquel
                     elle rencontre un noyau de musiciens avec lesquels elle crée et joue régulièrement. En faisant
                     partie d'un ensemble de musique folk, elle fera de nombreuses master classes à travers l'Europe
@@ -109,11 +131,11 @@
             <section class="bio-section parcours">
 
                 <div class="section-title">
-                    <h2>Parcours</h2>
+                    <h2 data-i18n="career">Parcours</h2>
                 </div>
 
                 <div id="trois">
-                    <p>
+                    <p data-i18n="careerText">
                         Depuis 2016, Marie a joué dans différents orchestres et ensembles classiques tels que :
                         Orchestre National de Belgique, Brussels Chamber Orchestra, Orchestre du Festival Musiq’3, La
                         Chapelle Sauvage, Nuove Musiche, La Chapelle Musicale de Tournai, Orchestre de Chambre de
@@ -142,14 +164,13 @@
             <section class="bio-section creation">
 
                 <div class="section-title">
-                    <h2>Création</h2>
+                    <h2 data-i18n="creation">Création</h2>
                 </div>
 
                 <div class="imageBM">
                     <img class="BM" src="../Ressources/images/bmbiocomp.jpg">
                 </div>
-
-                <p>
+                <p data-i18n="creationText">
                     Depuis 2022, Marie est à l’initiative d’un projet à la croisée des univers classique et jazz :
                     Bluesy Mary. Marie est à l’origine d’un projet jeune public, « Le grenier de Madame Léon », avec
                     Camille Babut de Marès au violon.

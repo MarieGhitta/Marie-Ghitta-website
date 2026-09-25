@@ -298,3 +298,38 @@ main {
         padding: 0;
     }
 }
+
+/* =========================================================
+   LANGUAGE SWITCHER
+   ========================================================= */
+
+.language-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 10;
+    display: flex;
+    gap: 12px;
+}
+
+.language-switcher button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #BFBFBF;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.language-switcher button:hover,
+.language-switcher button.active {
+    color: white;
+}
+
+.language-switcher button.active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

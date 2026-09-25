@@ -10,29 +10,63 @@
     <meta property="og:type" content="music.musician">
     <meta property="og:image" content="https://marieghitta.com/Ressources/images/miniature.JPG">
     <title>Projets</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="../Ressources/css/style.css">
     <link rel="stylesheet" href="./Projets.css">
+
     <script src="../main.js" defer></script>
 </head>
 
 <body>
+
     <header>
+
+        <div class="language-switcher">
+            <button type="button" data-lang="fr" class="active">FR</button>
+            <button type="button" data-lang="nl">NL</button>
+            <button type="button" data-lang="en">EN</button>
+        </div>
+
         <div class="menuToggle">
             <nav class="navbar">
+
                 <a id="close" href="#">✕</a>
+
                 <ul id="Menu">
-                    <li id="Home"><a href="../">Home</a></li>
-                    <li><a href="../biographie">Biographie</a></li>
-                    <li><a href="./">Projets</a></li>
-                    <li><a href="../discographie">Discographie</a></li>
-                    <li><a href="../agenda">Agenda</a></li>
-                    <li><a href="../contact-me">Contact</a></li>
+
+                    <li id="Home">
+                        <a href="../index.html" data-i18n="navHome">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a href="../biographie" data-i18n="navBio">Biographie</a>
+                    </li>
+
+                    <li>
+                        <a href="./" data-i18n="navProjects">Projets</a>
+                    </li>
+
+                    <li>
+                        <a href="../discographie" data-i18n="navDiscography">Discographie</a>
+                    </li>
+
+                    <li>
+                        <a href="../agenda" data-i18n="navAgenda">Agenda</a>
+                    </li>
+
+                    <li>
+                        <a href="../contact-me" data-i18n="navContact">Contact</a>
+                    </li>
+
                 </ul>
+
             </nav>
         </div>
 
@@ -41,125 +75,243 @@
                 <span>≡</span>
             </span>
         </a>
+
     </header>
+
+
     <main>
+
+        <!-- CLASSIQUE -->
+
         <div class="classique">
-            <h2>Classique</h2>
+
+            <h2 data-i18n="classical">Classique</h2>
+
             <div class="projet" id="Vivaldi">
-                <a href="../vivaldi" target="_blank"><img class="image" id="image-Vivaldi" src="../Ressources/images/Vivaldi.jpg"></a>
+
+                <a href="../vivaldi" target="_blank">
+                    <img class="image" id="image-Vivaldi"
+                        src="../Ressources/images/Vivaldi.jpg">
+                </a>
+
                 <h3>Les 4 saisons</h3>
-                <p>Six artistes vous proposent de (re-)découvrir cette œuvre, arrangée pour l’occasion pour deux
+
+                <p data-i18n="fourSeasonsText">
+                    Six artistes vous proposent de (re-)découvrir cette œuvre, arrangée pour l’occasion pour deux
                     violons, un alto, un violoncelle, une contrebasse et… une guitare ! Un défi de taille, avec des
                     musiciens de talent qui vous offriront une interprétation aussi épurée que chaleureuse dans une
-                    version inédite.</p>
+                    version inédite.
+                </p>
+
             </div>
+
         </div>
+
+
+        <!-- CLASSIQUE & JAZZ -->
+
         <div class="jazz">
-            <h2>Classique & Jazz</h2>
+
+            <h2 data-i18n="classicalJazz">Classique & Jazz</h2>
+
+
             <div class="projet" id="Bluesy-Mary">
-                <a href="https://bluesymary.com" target="_blank"><img class="image" id="image-BM"
-                        src="../Ressources/images/bmprojetcomp.jpg"></a>
+
+                <a href="https://bluesymary.com" target="_blank">
+                    <img class="image" id="image-BM"
+                        src="../Ressources/images/bmprojetcomp.jpg">
+                </a>
+
                 <h3>Bluesy Mary</h3>
-                <p>Bluesy Mary est un projet à la croisée des mondes classique et jazz, ayant la particularité d'avoir
+
+                <p data-i18n="bluesyMaryText">
+                    Bluesy Mary est un projet à la croisée des mondes classique et jazz, ayant la particularité d'avoir
                     comme point de départ, en grande partie, des chants issus du répertoire classique. Cette fusion est
                     rendue profonde et subtile par le lien entre le jeu de célèbres musiciens jazz et les spécificités
                     de chaque morceau classique. Ainsi, par exemple, le jeu de Bill Evans se lie à "la Méditation de
                     Thaïs" de Massenet, les balades de Nat King Cole à "Après un rêve" de Fauré. Le tout étant de rendre
                     ces deux mondes accessibles à tous par le biais de sonorités et thèmes inscrits dans le conscient
-                    et/ou l'inconscient collectif.</p>
+                    et/ou l'inconscient collectif.
+                </p>
+
             </div>
+
+
             <div class="projet" id="PLDQ">
-                <a href="https://www.facebook.com/paulineleblonddoublequartet" target="_blank"><img class="image"
-                    id="image-PLDQ" src="../Ressources/images/5ba0e6faea64a.jpg"></a>
+
+                <a href="https://www.facebook.com/paulineleblonddoublequartet" target="_blank">
+                    <img class="image" id="image-PLDQ"
+                        src="../Ressources/images/5ba0e6faea64a.jpg">
+                </a>
+
                 <h3>Pauline Leblond Double Quartet</h3>
-                <p>Le double quartet trouve ses racines quelque part entre Duke Ellington et Johann Sebastian Bach, ou
+
+                <p data-i18n="paulineLeblondText">
+                    Le double quartet trouve ses racines quelque part entre Duke Ellington et Johann Sebastian Bach, ou
                     peut-être entre Miles Davis et Henry Purcell. Le Pauline Leblond Double Quartet est une famille de
                     huit musiciens, qui ont construit des ponts entre le jazz et la musique baroque. C’est un subtil
                     mélange entre un quatuor à cordes et un quatuor de jazz, qui tantôt s’opposent, tantôt fusionnent.
                     Ensemble, ils jouent des compositions originales de la trompettiste Pauline Leblond. Les contrastes
-                    de timbres, de couleurs et de sons rappellent des images oniriques, voire cinématographiques.</p>
+                    de timbres, de couleurs et de sons rappellent des images oniriques, voire cinématographiques.
+                </p>
+
             </div>
+
+
             <div class="projet" id="veda">
-                <img class="image" id="image-veda" src="../Ressources/images/veda.jpg">
+
+                <img class="image" id="image-veda"
+                    src="../Ressources/images/veda.jpg">
+
                 <h3>Veda & The String Machine</h3>
-                <p>Pour ce projet, la musicienne et compositrice Veda Bartringer vise à chercher des nouvelles sonorités
+
+                <p data-i18n="vedaText">
+                    Pour ce projet, la musicienne et compositrice Veda Bartringer vise à chercher des nouvelles sonorités
                     en incluant un quatuor à cordes à côté du quartet. Les compositions sont un mélange entre musique
-                    classique et jazz. Il est important pour la musicienne d’inclure le savoir en musique classique
-                    qu’elle a acquise au conservatoire avant et pendant ses études en musique jazz. La musique classique
-                    représente le début de la carrière pour la musicienne : elle a pris des cours d’harmonie, de
-                    contrepoint, d’arrangement et étant professionnelle aujourd’hui, elle veut inclure ce savoir dans
-                    les nouvelles compositions. </p>
+                    classique et jazz. Il est important pour la musicienne d'inclure le savoir en musique classique
+                    qu'elle a acquise au conservatoire avant et pendant ses études en musique jazz. La musique classique
+                    représente le début de la carrière pour la musicienne : elle a pris des cours d'harmonie, de
+                    contrepoint, d'arrangement et étant professionnelle aujourd'hui, elle veut inclure ce savoir dans
+                    les nouvelles compositions.
+                </p>
+
             </div>
+
+
             <div class="projet" id="Moon-souvenirs">
-                <a href="https://www.facebook.com/M0onSouvenirs?locale=fr_FR" target="_blank"><img class="image"
-                        id="image-Moon-Souvenirs" src="../Ressources/images/2020 - Moon Souvenir.jpg"></a>
+
+                <a href="https://www.facebook.com/M0onSouvenirs?locale=fr_FR" target="_blank">
+                    <img class="image" id="image-Moon-Souvenirs"
+                        src="../Ressources/images/2020 - Moon Souvenir.jpg">
+                </a>
+
                 <h3>Moon Souvenirs</h3>
-                <p>Le trio de cordes Moon Souvenirs mélange délicatement des morceaux composés avec des moments
-                    d'improvisation, créant un paysage sonore magique et émouvant. A l’occasion de ce concert, le groupe
+
+                <p data-i18n="moonSouvenirsText">
+                    Le trio de cordes Moon Souvenirs mélange délicatement des morceaux composés avec des moments
+                    d’improvisation, créant un paysage sonore magique et émouvant. A l’occasion de ce concert, le groupe
                     présente ‘Memory Log Suite’ leur premier opus. Cet album est un hommage au pouvoir des souvenirs et
                     aux émotions qu'ils évoquent. Ancré dans le classique et le jazz mais s’imprégnant d'autres
                     influences telles que la musique folk, brésilienne et rock, chaque morceau de cet album est un
-                    voyage à travers différentes pensées et sentiments, comme une errance sur la Lune.</p>
+                    voyage à travers différentes pensées et sentiments, comme une errance sur la Lune.
+                </p>
+
                 facebook</a>
+
             </div>
+
+
             <div class="projet" id="ARCO">
-                <a href="https://www.igloorecords.be/album/arco-lorenzo-di-maio/" target="_blank"><img class="image"
-                        id="image-ARCO"
-                        src="../Ressources/images/480909292_3159395464208149_1512079000882139345_n.jpg"></a>
+
+                <a href="https://www.igloorecords.be/album/arco-lorenzo-di-maio/" target="_blank">
+                    <img class="image" id="image-ARCO"
+                        src="../Ressources/images/480909292_3159395464208149_1512079000882139345_n.jpg">
+                </a>
+
                 <h3>ARCO</h3>
-                <p>Le guitariste Lorenzo Di Maio (Octave de la musique en 2017) nous revient avec une formule classique
+
+                <p data-i18n="arcoText">
+                    Le guitariste Lorenzo Di Maio (Octave de la musique en 2017) nous revient avec une formule classique
                     du trio contrebasse-batterie-guitare à laquelle il joint un quatuor à cordes. Cette association
-                    offre à sa musique une combinaison de couleurs et de textures sonores immensément riches.Agrémenté
+                    offre à sa musique une combinaison de couleurs et de textures sonores immensément riches. Agrémenté
                     de la poésie de ses interprètes, le groupe dévoile un répertoire aux ambiances contrastées qui crée
                     une passerelle entre la pureté acoustique des cordes et les atmosphères électriques de la guitare.
                 </p>
+
             </div>
+
         </div>
+
+
+        <!-- CLASSIQUE & WORLD MUSIC -->
+
         <div class="World-Music">
-            <h2>Classique & World Music</h2>
+
+            <h2 data-i18n="classicalWorld">Classique & World Music</h2>
+
         </div>
+
+
         <div class="projet" id="Details">
-            <a href="https://www.zigzagworld.be/portfolio/driss-el-maloumi-trio-watar-quintet-2/" target="_blank"><img
-                    class="image" id="image-Details"
-                    src="../Ressources/images/driss-el-maloumi-banner-website-1.png"></a>
+
+            <a href="https://www.zigzagworld.be/portfolio/driss-el-maloumi-trio-watar-quintet-2/" target="_blank">
+                <img class="image" id="image-Details"
+                    src="../Ressources/images/driss-el-maloumi-banner-website-1.png">
+            </a>
+
             <h3>Details</h3>
-            <p>Le ’magicien du oud’ marocain originaire d’Agadir Driss El Maloumi qui s’accompagne ici de ses deux
+
+            <p data-i18n="detailsText">
+                Le ’magicien du oud’ marocain originaire d’Agadir Driss El Maloumi qui s’accompagne ici de ses deux
                 percussionnistes Saïd El Maloumi et de Lahoucine Baqir pour ce projet, réunit cinq musiciens belges pour
                 concevoir un univers musical alliant le classique européen à la musique arabe ! Le Watar Quintet qui est
                 composé de Amèle Metlini (1erviolon), Silvia Bazantova (2eviolon), Marie Ghitta (violon alto), Annemie
                 Osborne (violoncelle) et d’Adrien Tyberghein (contrebasse) apporte ainsi tout l’univers des cordes
                 classiques aux percussions et surtout au oud (un luth) cet instrument à cordes pincées répandu dans les
-                pays arabes, en Arménie ou en Grèce.</p>
+                pays arabes, en Arménie ou en Grèce.
+            </p>
+
         </div>
+
+
+        <!-- CLASSIQUE & ELECTRO -->
+
         <div class="World-Music">
-            <h2>Classique & Électro</h2>
+
+            <h2 data-i18n="classicalElectro">Classique & Électro</h2>
+
         </div>
+
+
         <div class="projet" id="SOPA">
-            <a href="https://sopaboba.bandcamp.com/album/that-moment" target="_blank"><img class="image" id="image-Sopa" src="../Ressources/images/SOPA BOBA.jpg"></a>
+
+            <a href="https://sopaboba.bandcamp.com/album/that-moment" target="_blank">
+                <img class="image" id="image-Sopa"
+                    src="../Ressources/images/SOPA BOBA.jpg">
+            </a>
+
             <h3>Sopa Boba</h3>
-            <p>Projet belgo-néerlandais porté par G.W.Sok (The Ex), Jean Vangeebergen (dramaturge) et par Pavel Tchikov
+
+            <p data-i18n="sopaText">
+                Projet belgo-néerlandais porté par G.W.Sok (The Ex), Jean Vangeebergen (dramaturge) et par Pavel Tchikov
                 (Ogives), celui-ci se décline en une étonnante combinaison entre lignes de synthés et travail d’un
                 quatuor à cordes sans oublier du spoken word (narration, lecture) ! Le premier album de ce concept, est
-                basé sur le texte éponyme de l’autrice moldave Nicoleta Esinencu,son adaptation musicale et narrative de
+                basé sur le texte éponyme de l’autrice moldave Nicoleta Esinencu, son adaptation musicale et narrative de
                 cet écrit surprend tout d’abord par des sons industriels et des effluves synthétiques ! Ensuite, les
                 instruments à cordes entrent en action puis arrive la narration, qui complète un tableau sonore étonnant
-                voire surprenant.</p>
+                voire surprenant.
+            </p>
+
         </div>
+
+
+        <!-- CLASSIQUE & JEUNESSE -->
+
         <div class="Jeunesse">
-            <h2>Classique & Jeunesse</h2>
+
+            <h2 data-i18n="classicalYouth">Classique & Jeunesse</h2>
+
         </div>
+
+
         <div class="projet" id="Leon">
-            <img class="image" id="image-" src="../Ressources/images/®Ensemble Arcadia - 1.jpg">
+
+            <img class="image" id="image-"
+                src="../Ressources/images/®Ensemble Arcadia - 1.jpg">
+
             <h3>Le grenier de Madame Léon</h3>
-            <p>Madame Léon, professeure de musique excentrique, se trompe
-                de salle et se retrouve face à un public à qui elle croit devoir
-                donner une conférence sérieuse. Seulement voilà : cet auditoire
-                est venu assister à un spectacle et de fait, elle décide de rester et
-                de lui partager sa passion pour la musique. Munie de sa baguette
-                de chef d’orchestre et de sa montre magique, elle entraîne alors
-                les petits dans un voyage dans le temps, empli d’humour, de
-                fantaisie… et bien sûr de musique !</p>
+
+            <p data-i18n="leonText">
+                Madame Léon, professeure de musique excentrique, se trompe de salle et se retrouve face à un public à
+                qui elle croit devoir donner une conférence sérieuse. Seulement voilà : cet auditoire est venu assister
+                à un spectacle et de fait, elle décide de rester et de lui partager sa passion pour la musique. Munie de
+                sa baguette de chef d’orchestre et de sa montre magique, elle entraîne alors les petits dans un voyage
+                dans le temps, empli d’humour, de fantaisie… et bien sûr de musique !
+            </p>
+
         </div>
+
+    </main>
 
 </body>
 

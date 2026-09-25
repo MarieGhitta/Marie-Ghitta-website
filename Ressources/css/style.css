@@ -1,3 +1,4 @@
+
 /* =========================
    SÉLECTEUR DE LANGUE
    ========================= */
@@ -68,7 +69,7 @@ body {
 .navbar ul {
     margin: 0;
     text-align: center;
-    padding: 0 9rem 0 0;
+    padding: 0 6rem 0 0;
     text-decoration: none;
     height: 100%;
 }
@@ -161,7 +162,8 @@ li {
 
 
 .menuBurger {
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-top: 0.5rem;
     color: blanchedalmond;
     display: flex;
     flex-direction: column;
@@ -176,7 +178,7 @@ li {
     font-family: 'Poiret One';
     margin-top: 3rem;
     color: blanchedalmond;
-    background-image: url("../images/Home\ couleur.png");
+    background-image: url("../images/home_clair.png");
     background-size: 100%;
     height: 40rem;
     position: relative;

@@ -5,7 +5,7 @@
 .language-switcher {
     position: fixed;
     top: 1rem;
-    right: 1.5rem;
+    right: 0.5rem;
     z-index: 10;
 
     display: flex;
@@ -162,7 +162,7 @@ li {
     font-family: 'Poiret One';
     margin-top: 3rem;
     color: blanchedalmond;
-    background-image: url("../images/Home\ couleur.png");
+    background-image: url("../images/home_clair.png");
     background-size: 100%;
     height: 40rem;
     position: relative;

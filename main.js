@@ -116,7 +116,7 @@ const vivaldiTranslations = {
 
     nl: {
 
-        intro: "Zes artiesten nodigen u uit om Vivaldi (opnieuw) te ontdekken, gearrangeerd voor twee violen, een altviool, een cello, een contrabas en… een gitaar! Een flinke uitdaging, met getalenteerde muzikanten die u zowel verfijnde als warme interpretaties bieden in deze volledig nieuwe arrangementen.",
+        intro: "Zes artiesten nodigen u uit om Vivaldi (opnieuw) te ontdekken, gearrangeerd voor twee violen, altviool, cello, contrabas en… gitaar! Een flinke uitdaging, met getalenteerde muzikanten die u zowel verfijnde als warme interpretaties bieden in deze volledig nieuwe arrangementen.",
 
         programme: "Programma",
 
@@ -137,7 +137,7 @@ const vivaldiTranslations = {
 
     en: {
 
-        intro: "Six artists invite you to (re-)discover Vivaldi, arranged for two violins, a viola, a cello, a double bass, and… a guitar! A formidable challenge, with talented musicians offering refined yet warm interpretations in these brand-new arrangements.",
+        intro: "Six artists invite you to (re-)discover Vivaldi, arranged for two violins, viola, cello, double bass, and… guitar! A formidable challenge, with talented musicians offering refined yet warm interpretations in these brand-new arrangements.",
 
         programme: "Programme",
 
